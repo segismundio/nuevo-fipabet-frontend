@@ -1,5 +1,5 @@
 // URL de tu API. CÁMBIALA cuando lo subas a un hosting.
-const API_URL = 'http://localhost/fipabet/api.php';
+const API_URL = 'www.fipabet.gamer.gd/api.php';
 
 // Referencias a elementos del DOM
 const appContent = document.getElementById('app-content');
@@ -192,4 +192,5 @@ if (localStorage.getItem('user_id')) {
     renderDashboard();
 } else {
     renderHome();
+
 }
