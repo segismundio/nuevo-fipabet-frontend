@@ -82,7 +82,7 @@ input[type="text"], input[type="password"], input[type="number"], input[type="da
     border-radius: 4px;
     box-sizing: border-box;
 }
-button[type="submit"] {
+button, input[type="submit"] {
     background-color: #0056b3;
     color: white;
     padding: 10px 20px;
@@ -92,35 +92,31 @@ button[type="submit"] {
     font-size: 16px;
     transition: background-color 0.3s;
 }
-button[type="submit"]:hover {
+button:hover, input[type="submit"]:hover {
     background-color: #004494;
 }
+
 table {
     width: 100%;
     border-collapse: collapse;
 }
-th, td {
+
+table, th, td {
     border: 1px solid #ddd;
-    padding: 8px;
-    text-align: left;
 }
-th {
+
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
     background-color: #f2f2f2;
 }
-/* Estilos del nuevo frontend */
-.content {
-    text-align: center;
-    margin-top: 50px;
+
+.success {
+    color: green;
 }
-.content a.button {
-    display: inline-block;
-    padding: 10px 20px;
-    margin: 10px;
-    background-color: #0056b3;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-}
-.content a.button:hover {
-    background-color: #004494;
+.error {
+    color: red;
 }
