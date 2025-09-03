@@ -13,9 +13,9 @@ const navLogout = document.getElementById('nav-logout');
 const renderHome = () => {
     appContent.innerHTML = `
         <h2>¡Bienvenido a FIPABET!</h2>
-        <p>Tu plataforma de apuestas de FIPAS. ¿Estás listo para poner a prueba tu conocimiento?</p>
-        <a href="#" id="btn-register" class="button">Regístrate ahora</a>
-        <a href="#" id="btn-login" class="button">Ya tengo una cuenta</a>
+        <p>Para que tu vida no sea una carga</p>
+        <a href="#" id="btn-register" class="button">Regístrate picha</a>
+        <a href="#" id="btn-login" class="button">Ya tengo una cuenta cojone</a>
     `;
     document.getElementById('btn-register').onclick = () => renderRegister();
     document.getElementById('btn-login').onclick = () => renderLogin();
@@ -194,3 +194,4 @@ if (localStorage.getItem('user_id')) {
     renderHome();
 
 }
+
